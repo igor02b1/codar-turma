@@ -1,213 +1,237 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", "Segoe UI";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Segoe UI";
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
 body {
-  font-family: "Segoe UI", "Sans Serif";
+    font-family: "Segoe UI", "Sans Serif";
 }
+
 
 /* header começa aqui */
 
 .conteiner-header {
-  width: 100%;
-  background-color: whitesmoke;
-  min-height: 15vh;
-  height: auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0 4%;
+    width: 100%;
+    background-color: whitesmoke;
+    min-height: 15vh;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
 }
 
 .conteiner-logo {
-  font-style: oblique;
-  font-size: 3.3vw;
-  display: flex;
+    font-style: oblique;
+    font-size: 3.3vw;
+    display: flex;
 }
 
 .conteiner-logo h1 {
-  color: red;
-  font-size: 1em;
+    color: red;
+    font-size: 1em;
 }
 
 .conteiner-logo span {
-  color: black;
-  font-size: 1em;
+    color: black;
+    font-size: 1em;
 }
 
 .header-conteiner-menu {
-  width: 50%;
-  font-size: 2vw;
+    width: 50%;
+    font-size: 2vw;
 }
 
 .header-conteiner-menu ul {
-  display: flex;
-  font-size: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+    display: flex;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 .header-conteiner-menu ul a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 #button-login {
-  border-radius: 70px;
-  background-color: red;
-  padding: 1.5% 10%;
+    border-radius: 70px;
+    background-color: red;
+    padding: 1.5% 10%;
 }
 
 
 /* header termina aqui */
 
+
 /* main começa aqui*/
 
 .containers {
-  margin-top: 10%;
-  display: flex;
-  width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .box-img {
-  width: 40%;
-  margin-left: 10%;
+    width: 30%;
 }
 
 .box-img img {
-  width: 35rem;
-  height: 30rem;
+    width: 100%;
 }
 
 .box-text {
-  width: 50%;
-  padding-top: 7%;
+    width: 30%;
 }
 
 .box-text h2 {
-  font-size: 1.9em;
-  font-weight: 600;
+    font-size: 1.9vw;
+    font-weight: 600;
 }
 
 .box-text p {
-  font-weight: 700;
-  font-size: 4.5em;
-  color: red;
+    font-weight: 700;
+    font-size: 4vw;
+    color: red;
 }
 
 .btn-container-1 {
-  height: 3rem;
-  width: 20rem;
-  margin-top: 5%;
-  background-color: red;
-  color: white;
-  font-size: 1.4em;
-  font-weight: 600;
-  border: 0;
-  border-radius: 10px;
-  cursor: pointer;
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-size: 1.4vw;
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 2% 0;
+    margin-top: 5%;
 }
 
 .btn-container-1:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-/*main termina aqui*/
 
-/* Seção media */
+/* Seção do igo */
 
-@media (max-width: 768px) {
-  .conteiner-header {
+.container-options {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 3% 2%;
-  }
-
-  .conteiner-logo {
-    font-size: 8.3vw;
-    display: flex;
-  }
-
-  .header-conteiner-menu {
-    width: 100%;
-    font-size: 4.4vw;
-    margin-top: 5%;
-  }
-
-  .header-conteiner-menu ul {
-    width: 70%;
-    font-size: 1em;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-
-  #button-login {
-    display: none;
-  }
-}
-.container-options{
-    display: flex;
-    background-color: green;
     justify-content: space-around;
     width: 100%;
 }
 
-.container-options nav{
+.container-options nav {
     width: 40%;
-    background-color: rgb(230, 255, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     
 }
 
 .container-options nav ul {
     list-style: none;
 }
 
-.container-options ul li{
-    background-color: green;
+.container-options ul li {
     display: flex;
-    
 }
 
-.imagem-bolinha{
-  width: 20px;
-  height: 20px;
-  border-radius: 50px;
-  background-color: rgb(255, 9, 9);
-  
+.imagem-bolinha {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: rgb(255, 9, 9);
 }
 
 .container-options ul li p {
     font-size: 1.4em;
-    
 }
 
-.coding-img{
+.coding-img {
     width: 60%;
-    background-color: blue;
     display: flex;
     justify-content: center;
 }
 
 .coding-img img {
     width: 50%;
-    
-    
 }
 
 
+/* Responsividade menu */
+
+@media (max-width: 768px) {
+    .conteiner-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 2%;
+    }
+    .conteiner-logo {
+        font-size: 8.3vw;
+        display: flex;
+    }
+    .header-conteiner-menu {
+        width: 100%;
+        font-size: 4.4vw;
+        margin-top: 5%;
+    }
+    .header-conteiner-menu ul {
+        width: 70%;
+        font-size: 1em;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    #button-login {
+        display: none;
+    }
+}
+
+
+/* Responsividade seção main1 */
+
+@media (max-width: 768px) {
+    .containers {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        width: 100%;
+    }
+    .box-img {
+        width: 70%;
+    }
+    .box-text {
+        margin-top: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-text h2 {
+        font-size: 4.4vw;
+        font-weight: 600;
+        text-align: center;
+    }
+    .box-text p {
+        font-weight: 700;
+        font-size: 10vw;
+        text-align: center;
+        color: red;
+    }
+    .btn-container-1 {
+        width: 60%;
+        font-size: 3vw;
+    }
+}
