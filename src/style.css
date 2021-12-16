@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", "Segoe UI";
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
 body {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Sans Serif";
 }
+
+/* header começa aqui */
 
 .conteiner-header {
   width: 100%;
@@ -62,9 +67,61 @@ body {
   padding: 1.5% 10%;
 }
 
-#button-login a {
-  color: whitesmoke;
+
+/* header termina aqui */
+
+/* main começa aqui*/
+
+.containers {
+  margin-top: 10%;
+  display: flex;
+  width: 100%;
 }
+
+.box-img {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.box-img img {
+  width: 35rem;
+  height: 30rem;
+}
+
+.box-text {
+  width: 50%;
+  padding-top: 7%;
+}
+
+.box-text h2 {
+  font-size: 1.9em;
+  font-weight: 600;
+}
+
+.box-text p {
+  font-weight: 700;
+  font-size: 4.5em;
+  color: red;
+}
+
+.btn-container-1 {
+  height: 3rem;
+  width: 20rem;
+  margin-top: 5%;
+  background-color: red;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 600;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-container-1:hover {
+  transform: scale(1.1);
+}
+
+/*main termina aqui*/
 
 /* Seção media */
 
@@ -123,6 +180,7 @@ body {
 
 .container-options ul li{
     background-color: green;
+    display: flex;
     
 }
 
@@ -131,6 +189,7 @@ body {
   height: 20px;
   border-radius: 50px;
   background-color: rgb(255, 9, 9);
+  
 }
 
 .container-options ul li p {
@@ -150,4 +209,5 @@ body {
     
     
 }
+
 
