@@ -1,104 +1,187 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Segoe UI";
 }
 
-body{
-    font-family: 'Segoe UI';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Segoe UI";
 }
 
-.conteiner-header{
-    width: 100%;
-    background-color: whitesmoke;
-    min-height: 15vh;
-    height: auto;
+/* header começa aqui */
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.conteiner-header {
+  width: 100%;
+  background-color: whitesmoke;
+  min-height: 15vh;
+  height: auto;
 
-    padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 4%;
 }
 
-.conteiner-logo{
-    font-style: oblique;
-    font-size: 3.3vw;
-    display: flex;
+.conteiner-logo {
+  font-style: oblique;
+  font-size: 3.3vw;
+  display: flex;
 }
 
-.conteiner-logo h1{
-    color: red;
-    font-size: 1em;
+.conteiner-logo h1 {
+  color: red;
+  font-size: 1em;
 }
 
-.conteiner-logo span{
-    color: black;
-    font-size: 1em;
+.conteiner-logo span {
+  color: black;
+  font-size: 1em;
 }
 
-.header-conteiner-menu{
-    width: 50%;
-    font-size: 2vw;
+.header-conteiner-menu {
+  width: 50%;
+  font-size: 2vw;
 }
 
-.header-conteiner-menu ul{
-    display: flex;
-    font-size: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-
+.header-conteiner-menu ul {
+  display: flex;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
-.header-conteiner-menu ul a{
-    text-decoration: none;
-    color: black;
+.header-conteiner-menu ul a {
+  text-decoration: none;
+  color: black;
 }
 
-#button-login{
-    border-radius: 70px;
-    background-color: red;
-    padding: 1.5% 10%
-    
+.header-conteiner-menu li:hover {
+  border-bottom: 5px solid black;
+  padding-bottom: 2%;
 }
 
-#button-login a{
-    color: whitesmoke;
+#button-login {
+  border-radius: 15px;
+  background-color: red;
+  padding: 1.5% 10%;
 }
+
+#button-login a {
+  color: whitesmoke;
+}
+
+/* header termina aqui */
+
+/* main começa aqui*/
+
+.containers {
+  margin-top: 10%;
+  display: flex;
+  width: 100%;
+}
+
+.box-img {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.box-img img {
+  width: 35rem;
+  height: 30rem;
+}
+
+.box-text {
+  width: 50%;
+  padding-top: 7%;
+}
+
+.box-text h2 {
+  font-size: 1.9em;
+  font-weight: 600;
+}
+
+.box-text p {
+  font-weight: 700;
+  font-size: 4.5em;
+  color: red;
+}
+
+.btn-container-1 {
+  height: 3rem;
+  width: 20rem;
+  margin-top: 5%;
+  background-color: red;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 600;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-container-1:hover {
+  transform: scale(1.1);
+}
+
+/*main termina aqui*/
 
 /* Seção media */
 
 @media (max-width: 768px) {
-    .conteiner-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    
-        padding: 3% 2%;
-    }
+  .conteiner-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-    .conteiner-logo{
-        font-size: 8.3vw;
-        display: flex;
-    }
+    padding: 3% 2%;
+  }
 
-    .header-conteiner-menu{
-        width: 100%;
-        font-size: 4.4vw;
-        margin-top: 5%;
-    }
+  .conteiner-logo {
+    font-size: 8.3vw;
+    display: flex;
+  }
 
-    .header-conteiner-menu ul{
-        width: 70%;
-        font-size: 1em;
-        margin: 0 auto;
-        justify-content: space-between;
-    }
+  .header-conteiner-menu {
+    width: 100%;
+    font-size: 4.4vw;
+    margin-top: 5%;
+  }
 
-    #button-login{
-        display: none;
-    }
+  .header-conteiner-menu ul {
+    width: 70%;
+    font-size: 1em;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  #button-login {
+    display: none;
+  }
+
+  .containers {
+    flex-direction: column;
+  }
+
+  .box-text {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .btn-container-1 {
+    height: 4.5rem;
+    width: 25rem;
+    border-radius: 20px;
+  }
+
+  .btn-container-1:hover {
+    transform: none;
+  }
 }
