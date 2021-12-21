@@ -190,7 +190,7 @@ body {
 
 .imagem-bolinha img{
   width: 100%;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .container-options ul li p {
@@ -207,3 +207,11 @@ body {
 .coding-img img {
   width: 50%;
 }
+@media(max-width: 768px)
+{
+   
+
+}
+
+
+
